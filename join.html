@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <h1><a href="index.html">DCODELAB</a></h1>
+ 
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                   <li><a href="youtube.html">YOUTUBE</a></li>
+                   <li><a href="community.html">COMMUNITY</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="location.html">LOCATION</a></li>
+                </ul>
+ 
+                <ul class="util">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </nav>
+ 
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a> 
+ 
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">DCODELAB</a>
+                    <span>UI/UX DEVELOPMENT INSTITUTE</span> 
+                </h1>
+ 
+                <ul id="gnbMo">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>JOIN <span>회원가입</span></h1>
+            <form action=""> 
+                <!-- action은 데이터를 보낼 url을 적는곳. -->
+                <fieldset>
+                    <!-- form의 구역을 나누는 태그 (부모) 필수적인 form요소 -->
+                    <legend class="hidden" >회원가입양식폼</legend>
+                    <!-- form의 구역에 직접 작성하는 태그 (자식으로 볼수있다.) 필수적인 form요소 -->
+                    <h2><label for="terms">Terms & Policy</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod quos enim ea minus nobis tempora accusantium nihil, praesentium, a vitae pariatur eos maiores fuga error. Fugiat error rerum omnis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod quos enim ea minus nobis tempora accusantium nihil, praesentium, a vitae pariatur eos maiores fuga error. Fugiat error rerum omnis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod quos enim ea minus nobis tempora accusantium nihil, praesentium, a vitae pariatur eos maiores fuga error. Fugiat error rerum omnis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod quos enim ea minus nobis tempora accusantium nihil, praesentium, a vitae pariatur eos maiores fuga error. Fugiat error rerum omnis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod quos enim ea minus nobis tempora accusantium nihil, praesentium, a vitae pariatur eos maiores fuga error. Fugiat error rerum omnis!
+
+                    </textarea>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다.</label>
+                    </div>
+
+                    <h2>MEMBER INFORMATION</h2>
+                    <table>
+                        <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="id">USER ID</label></th>
+                            <td>
+                                <input type="text" name="id" id="id"
+                                placeholder="아이디를 입력해 주세요" required>
+                                <!-- placeholder : 예시 텍스트를 적는것.
+                                UI/UX 관점에서는 placeholder보다 다른 방법으로 예시를 들어주는게 좋다.
+                                -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd">PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="password" id="pwd"
+                                placeholder="비밀번호를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="password2" id="pwd2"
+                                placeholder="비밀번호를 재입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HOBBY</th>
+                            <td>
+                                <label for="game">
+                                    <input type="checkbox" name="hobby" id="game" value="game">GAME
+                                </label>
+                                <label for="music">
+                                    <input type="checkbox" name="hobby" id="music" value="music">MUSIC
+                                </label>
+                                <label for="reading">
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">READING
+                                </label>
+                                <p class="hobbyTxt">취미를 하나이상 선택해주세요</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">GENDER</th>
+                            <td>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male">MALE
+                                </label>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female" value="female">FEMALE 
+                                </label>
+                                <p class="genderTxt">성별을 선택해주세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="email">E-MAIL</label></th>
+                            <td>
+                                <input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요">
+                                <select name="company" id="company">
+                                    <option value="naver">@naver.com</option>
+                                    <option value="nate">@nate.com</option>
+                                    <option value="daum">@hanmail.net</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="comments">COMMENTS</label></th>
+                            <td>
+                                <textarea name="comments" id="comments" placeholder="코멘트를 입력해 주세요" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <h1>DCODELAB</h1>
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+ 
+            <address>
+                address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore.<br/>
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+ 
+            <p>Copyright &copy; 2021 DCODELAB ALL Right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
