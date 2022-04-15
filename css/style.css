@@ -519,7 +519,8 @@ table {
   text-align: center;
   border-right: none;
 }
-.join .inner table th input[type=submit], .join .inner table th input[type=reset] {
+.join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
   width: 150px;
   height: 40px;
   border: none;
@@ -532,14 +533,16 @@ table {
   border-bottom: 1px solid #bbb;
   padding: 20px 30px;
 }
-.join .inner table td input[type=text], .join .inner table td input[type=password] {
+.join .inner table td input[type=text],
+.join .inner table td input[type=password] {
   width: 30%;
   height: 30px;
   border: 1px solid #bbb;
   background: #eeffff;
   padding-left: 20px;
 }
-.join .inner table td input[type=checkbox], .join .inner table td input[type=radio] {
+.join .inner table td input[type=checkbox],
+.join .inner table td input[type=radio] {
   margin-right: 10px;
 }
 .join .inner table td label {
@@ -560,6 +563,51 @@ table {
   resize: none;
 }
 
+@media screen and (max-width: 1179px) {
+  .join .inner table th {
+    display: none;
+  }
+  .join .inner table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join .inner table td input[type=text],
+.join .inner table td input[type=password] {
+    width: 50%;
+  }
+  .join .inner table td input[type=text] select#company,
+.join .inner table td input[type=password] select#company {
+    width: 30%;
+  }
+  .join .inner table td input[type=text] textarea#comments,
+.join .inner table td input[type=password] textarea#comments {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1179px) and (max-width: 540px) {
+  .join .sub_visual {
+    background: pink;
+  }
+  .join .inner table th {
+    font-size: 0;
+  }
+  .join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+    width: 40%;
+    margin: 0 5%;
+  }
+  .join .inner table td input[type=text],
+.join .inner table td input[type=password] {
+    width: 100%;
+  }
+  .join .inner table td select#company {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .join .inner table td textarea#comments {
+    width: 100%;
+  }
+}
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd;
@@ -716,7 +764,8 @@ table {
 #visual video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.4;
 }
 #visual .inner {
@@ -786,7 +835,8 @@ table {
 #news .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.5s;
 }
 #news .inner .wrap article .pic:hover img {
@@ -867,7 +917,8 @@ table {
 #brand .inner .wrap article:nth-of-type(2) img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(3) {
   width: 380px;
@@ -878,7 +929,8 @@ table {
 #brand .inner .wrap article:nth-of-type(3) img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #brand .inner .wrap article:nth-of-type(4) {
   width: 780px;
@@ -890,7 +942,8 @@ table {
 #brand .inner .wrap article:nth-of-type(4) img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* banner ---------------------------------------------- */
@@ -1175,6 +1228,4 @@ table {
     margin-left: 0;
     margin: 5px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
